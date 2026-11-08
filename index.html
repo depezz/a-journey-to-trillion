@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Journey to Trillion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>A JOURNEY TO TRILLION</h1>
+        <p>Destroy the icon. Reach the impossible.</p>
+    </header>
+    <div class="sound-controls">
+    <button id="soundToggle">🔊 SOUND ON</button>
+</div>
+
+<audio id="bgm" src="sounds/bgm.mp3" loop></audio>
+<audio id="tapSound" src="sounds/tap.mp3"></audio>
+<audio id="upgradeSound" src="sounds/upgrade.mp3"></audio>
+
+    <main class="game-container">
+
+        <!-- Icon Health -->
+        <section class="health-section">
+            <h2>ICON HEALTH</h2>
+            <h3 id="health">1,000,000,000,000</h3>
+
+            <div class="health-bar">
+                <div class="health-fill" id="healthFill"></div>
+            </div>
+        </section>
+
+        <!-- Main Tap Button -->
+        <section class="tap-section">
+            <button id="tapButton" class="tap-button">
+                TAP
+            </button>
+            <p>Click to deal damage!</p>
+        </section>
+
+        <!-- Player Statistics -->
+        
+<!-- Player Statistics -->
+<section class="stats-section">
+
+    <div class="stat-card">
+        <p>SKILL POINTS</p>
+        <h2 id="points">0.0</h2>
+    </div>
+
+    <div class="stat-card">
+        <p>TOTAL TAPS</p>
+        <h2 id="totalTaps">0</h2>
+    </div>
+
+    <div class="stat-card">
+        <p>TAPS DAMAGE</p>
+        <h2 id="tapPower">x1</h2>
+    </div>
+
+    <div class="stat-card">
+        <p>SKILL MULTIPLY</p>
+        <h2 id="skillMultiplier">x1</h2>
+    </div>
+
+</section>
+
+<!-- Upgrade Shop -->
+<section class="upgrade-section">
+
+    <h2>UPGRADE SHOP</h2>
+    <p>Improve your tapping abilities.</p>
+
+    <!-- Skill Multiply -->
+    <div class="upgrade-card">
+        <h3>SKILL MULTIPLY</h3>
+        <p>Increase Skill Points gained per tap.</p>
+
+        <h2 id="skillUpgradeLevel">x1 → x2</h2>
+        <p id="skillUpgradeCost">Cost: 10 Points</p>
+
+        <button id="skillUpgradeButton">
+            Upgrade Skill Multiply
+        </button>
+    </div>
+
+    <!-- Taps Damage -->
+    <div class="upgrade-card">
+        <h3>TAPS DAMAGE</h3>
+        <p>Increase damage dealt per tap.</p>
+
+        <h2 id="damageUpgradeLevel">x1 → x2</h2>
+        <p id="damageUpgradeCost">Cost: 10 Points</p>
+
+        <button id="damageUpgradeButton">
+            Upgrade Taps Damage
+        </button>
+    </div>
+
+    <!-- Base Damage Upgrade -->
+<div class="upgrade-card">
+    <h3>Base Damage</h3>
+    <p>Level: <span id="baseDamageUpgradeLevel">0</span></p>
+    <p>Base Damage: <span id="baseDamage">1</span></p>
+    <p>Cost: <span id="baseDamageUpgradeCost">10</span> Points</p>
+
+    <button id="baseDamageUpgradeButton">
+        Upgrade Base Damage
+    </button>
+</div>
+
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #888;
+    margin-top: 10px;
+}
+
+/* GAME CONTAINER */
+.game-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* HEALTH */
+.health-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.health-section h2 {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.health-section h3 {
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.health-bar {
+    width: 100%;
+    height: 14px;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.health-fill {
+    width: 100%;
+    height: 100%;
+    background: #e04444;
+}
+
+/* TAP BUTTON */
+.tap-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tap-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #555;
+    background: #242424;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.tap-button:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+.tap-button:active {
+    transform: scale(0.95);
+}
+
+.tap-section p {
+    color: #888;
+    margin-top: 15px;
+}
+
+/* STATS */
+.stats-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.stat-card p {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.stat-card h2 {
+    font-size: 22px;
+}
+
+/* UPGRADE */
+.upgrade-section {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.upgrade-section p {
+    color: #888;
+    margin: 10px 0 20px;
+}
+
+#upgradeButton {
+    padding: 13px 25px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#upgradeButton:hover {
+    background: #ccc;
+}
+
+.upgrade-card {
+    background: #242424;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.upgrade-card h3 {
+    margin-bottom: 10px;
+}
+
+.upgrade-card p {
+    color: #999;
+    margin: 10px 0;
+}
+
+.upgrade-card button {
+    padding: 12px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upgrade-card button:hover {
+    background: #ccc;
+}
+
+.upgrade-card button:disabled {
+    background: #555;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.sound-controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#soundToggle {
+    padding: 10px 18px;
+    background: #242424;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#soundToggle:hover {
+    background: #383838;
+}
